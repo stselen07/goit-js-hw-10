@@ -12,7 +12,7 @@ const input = document.querySelector('#datetime-picker');
 
 startBtn.addEventListener('click', () => {
   startBtn.disabled = true;
-  inputfield.disabled = true;
+  input.disabled = true;
   startTimer();
 });
 
@@ -56,10 +56,10 @@ flatpickr('#datetime-picker', options);
 
 
 function updateClockface({ days, hours, minutes, seconds }) {
-  showDays.textContent = `${days}`;
-  showHours.textContent = `${hours}`;
-  showMinutes.textContent = `${minutes}`;
-  showSeconds.textContent = `${seconds}`;
+  daysTime.textContent = `${days}`;
+  hoursTime.textContent = `${hours}`;
+  minutesTime.textContent = `${minutes}`;
+  secondsTime.textContent = `${seconds}`;
 }
 
 function startTimer() {
