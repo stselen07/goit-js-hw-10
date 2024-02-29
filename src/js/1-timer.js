@@ -76,7 +76,7 @@ function timer() {
   
   } else {
      clearInterval(intervalId);
-     inputfield.disabled = false;
+     input.disabled = false;
   }
 }
  
